@@ -1,0 +1,122 @@
+# 🩺 Mission Control Health Dashboard
+
+**Generated:** 2026-05-13 05:17 UTC | **Sprint:** 53 | **Agent:** Henry (Capehouse)
+
+---
+
+## 1. Agent Status at a Glance
+
+| Agent | Status | Story | Health |
+|-------|--------|-------|--------|
+| 🦊 **Henry (Capehouse)** | 🟢 WORKING | `40a2e258` — MC Health Dashboard | ✅ |
+| 🐦‍⬛ **Raven (PO)** | 🟢 WORKING | `03feb84f` — Sprint 53 Backlog (8 stories) | ✅ |
+| 📱 **Social Agent** | 🟢 WORKING | `33bae89c` — Sprint 53 Planning | ⚠️ DoD violation |
+| 💰 **Sales Agent** | 🔴 BLOCKED | `f660c1cc` — ClawMart Vercel Deploy | 🚫 Jeff SOLE |
+| 🚀 **Deploy Agent** | 🔴 BLOCKED | `02b5c648` — ClawMart Vercel Redeploy | 🚫 Jeff SOLE |
+| 🔬 **Research Agent** | 🔴 BLOCKED | `6a165dc2` — LinkedIn OAuth Credentials | 🚫 Jeff SOLE |
+| 🧭 **Main Agent** | ⚪ IDLE | — | — |
+| 🤖 **Claude (Co-pilot)** | ⚪ IDLE | — | — |
+
+**Legend:** 🟢 Working | 🔴 Blocked | ⚪ Idle | 🚫 Jeff SOLE action needed
+
+---
+
+## 2. WIP Limit Enforcement (WIP=1)
+
+| Agent | In-Progress | WIP Limit | Violation? |
+|-------|:-----------:|:---------:|:----------:|
+| Henry | 1 | 1 | ✅ OK |
+| Raven (PO) | 1 | 1 | ✅ OK |
+| Social | 1 | 1 | ✅ OK |
+| Sales | 1 | 1 | ✅ OK |
+| Deploy | 1 | 1 | ✅ OK |
+| Research | 1 | 1 | ✅ OK |
+| Main | 0 | 1 | ✅ OK |
+| Claude | 0 | 1 | ✅ OK |
+
+> ✅ **No WIP violations.** All agents ≤ WIP=1.
+
+---
+
+## 3. Sprint Velocity Trend
+
+| Sprint Week | Done Stories | Trend |
+|-------------|:-----------:|-------|
+| Week of May 4 (Mon–Sun) | 38 | 📊 Baseline (most recent completed) |
+| Week of May 11 (current) | 0 | 🛑 Sprint just started |
+
+> 📝 **Note:** Done API returned 50 most recent stories (S51–S52). The earliest visible completion is May 5, 2026. Prior weeks are beyond the API's default page limit. Sprint 52 closed with **197 done stories** per Raven's report — a sustained high-output sprint. Sprint 53 has 0 completions as it just started (May 13).
+
+**Velocity projection:** Sprint 52 achieved ~197 stories. Sprint 53 target: 8–12 stories (in-progress backlog).
+
+---
+
+## 4. Blocked Stories vs. Available Inbox
+
+### 🔴 Blocked (6 in-progress, 3 BLOCKED)
+
+| Story ID | Agent | Blocker | Unblocks |
+|----------|-------|---------|----------|
+| `f660c1cc` | Sales | Jeff SOLE — Vercel deploy access | ClawMart revenue verification |
+| `02b5c648` | Deploy | Jeff SOLE — Vercel redeploy | Same as above |
+| `6a165dc2` | Research | Jeff SOLE — LinkedIn OAuth real tokens | 3 inbox stories + social campaign |
+
+### 📥 Inbox (4 stories — ALL Jeff SOLE, unassignable)
+
+| ID | Title | Pts | SOLE |
+|----|-------|:---:|------|
+| `53f10c4d` | LinkedIn Thought Leadership — 12 Posts | 3 | Jeff (needs OAuth first) |
+| `868a14c1` | LinkedIn OAuth Provisioning — Real Credentials | 0 | Jeff |
+| `b2fa2bd0` | LinkedIn OAuth — Jeff Action Required (3 Stories Blocked) | 0 | Jeff |
+| `4423eb69` | Sprint 52 LinkedIn OAuth Credentials | 2 | Jeff |
+
+> 🚨 **CRITICAL:** All inbox stories are Jeff SOLE actions. No stories available for agent self-assignment. All velocity blocked on two Jeff actions:
+> 1. **LinkedIn OAuth tokens** → unblocks 3 inbox + 1 in-progress (Research) + 1 campaign
+> 2. **Vercel redeploy** → unblocks 2 in-progress (Sales + Deploy) + revenue verification
+
+---
+
+## 5. Active Deliverables (In-Progress)
+
+| Story | Agent | Deliverable | Status |
+|-------|-------|-------------|--------|
+| `40a2e258` | Henry | `/workspace/deliverables/mc-health-dashboard.md` | 🟢 In progress |
+| `03feb84f` | Raven (PO) | 8-10 sprint stories in MC inbox | 🟢 Working |
+| `33bae89c` | Social | Sprint 53 planning doc | ⚠️ DoD violation — no artifact URL |
+| `f660c1cc` | Sales | ClawMart API @ api.clawmart.ai | 🔴 Blocked |
+| `02b5c648` | Deploy | Vercel deployment docs | 🔴 Blocked |
+| `6a165dc2` | Research | LinkedIn OAuth in .env | 🔴 Blocked (placeholders only) |
+
+---
+
+## 6. ⚠️ Alerts
+
+| Alert | Detail |
+|-------|--------|
+| 🔴 **Velocity Zero** | Sprint 53 has 0 done stories (just started) |
+| 🔴 **All Inbox Blocked** | 4 inbox stories are Jeff SOLE — zero claimable |
+| 🔴 **3 Agents BLOCKED** | Sales, Deploy, Research blocked on Jeff SOLE actions |
+| ⚠️ **DoD Violation** | Story `33bae89c` (Sprint 53 Planning) moved to review without deliverable URL — blocked by Scrum Master |
+| ⚠️ **Sprint Autostart Failed** | Henry's autostart returns MC board read error (API health OK) |
+| ✅ **WIP Clean** | No agent exceeds WIP=1 |
+| ✅ **MC API Healthy** | API status: OK |
+
+---
+
+## 7. Critical Path
+
+```
+Jeff SOLE Blockers
+├── LinkedIn OAuth Tokens ────→ Unblocks: Research (6a165dc2) + 3 inbox (868a14c1, b2fa2bd0, 4423eb69) + campaign (53f10c4d)
+│                              5 stories total ⛓️
+└── Vercel Redeploy ──────────→ Unblocks: Sales (f660c1cc) + Deploy (02b5c648) + revenue verification
+                                3 stories total ⛓️
+                                
+                ═══════════════════════════════════
+                Jeff action needed on BOTH blockers
+                ═══════════════════════════════════
+```
+
+---
+
+*Dashboard generated by Henry (Capehouse) — MC Health Dashboard deliverable for story `40a2e258`*
